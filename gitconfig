@@ -1,0 +1,16 @@
+[user]
+    name = Ales Kozina
+    email = kozina.ales@gmail.com
+[alias]
+    f = fetch
+    fa = fetch --all
+    s = status
+    d = diff
+    pl = pull
+    ps = push
+    pod = "!git push origin HEAD:refs/for/$1"
+    ac = !git add --all && git commit -m
+[color]
+    ui = true
+[push]
+    default = current

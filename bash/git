@@ -1,0 +1,6 @@
+#!/usr/local/bin/bash
+
+#GIT AUTOCOMPLETE (VIA BREW GIT)
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
