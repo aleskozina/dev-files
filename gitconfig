@@ -5,6 +5,7 @@
     f = fetch
     fa = fetch --all
     s = status
+    c = commit -m
     d = diff
     pl = pull
     ps = push

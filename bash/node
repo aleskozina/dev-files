@@ -11,6 +11,8 @@ alias npmf='nvm install && npm install'
 alias npmff='rm -rf node_modules && npmf'
 alias npmfr='npmf && npmr'
 alias npmffr='npmff && npmr'
+alias npmsl='find / -type d -name "node_modules" 2>/dev/null | xargs -I{} find {} -type l -maxdepth 1 | xargs ls -l'
 
 #NODEJS
 export PATH=./node_modules/.bin:$PATH
+
