@@ -1,5 +1,3 @@
-#!/usr/local/bin/bash
-
 SCRIPTPATH="$(dirname $(readlink $( pwd -P )/.bash_profile))"
 
 source $SCRIPTPATH/bash/brew

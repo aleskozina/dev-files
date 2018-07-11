@@ -1,5 +1,3 @@
-#!/usr/local/bin/bash
-
 #MOVING
 alias ll='ls -GFhal'
 alias ..='cd ..'

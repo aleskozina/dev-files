@@ -1,5 +1,3 @@
-#!/usr/local/bin/bash
-
 git_show_branch() {
     RESULT=$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/')
 

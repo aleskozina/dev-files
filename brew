@@ -1,10 +1,8 @@
-#!/usr/local/bin/bash
-
 #$PATH
 export PATH="/usr/local/sbin:$PATH"
 
 #brew autocomplete
-[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+# [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 #SERVICES
 alias devstart='brew services start mysql && brew services start php71 && sudo apachectl start'
