@@ -4,3 +4,4 @@
 * oh-my-zsh
 * nvm
 * git (brew)
+* hyperjs
