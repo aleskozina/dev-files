@@ -1,6 +1,9 @@
 [user]
     name = Ales Kozina
     email = kozina.ales@gmail.com
+[core]
+	editor = nano
+	excludesfile = ~/.gitignore
 [alias]
     f = fetch
     fa = fetch --all
@@ -9,7 +12,6 @@
     d = diff
     pl = pull
     ps = push
-    pod = "!git push origin HEAD:refs/for/$1"
     ac = !git add --all && git commit -m
 [color]
     ui = true
