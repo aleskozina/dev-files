@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 fpath=("$HOME/.zfunctions" $fpath)
 # fpath=( "$HOME/.zprompts" $fpath )
@@ -98,3 +99,5 @@ PURE_PROMPT_SYMBOL=λ
 PURE_PROMPT_NODE=⬢
 autoload -U promptinit; promptinit
 prompt pure
+
+source /usr/local/Cellar/zsh-syntax-highlighting/0.6.0/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
