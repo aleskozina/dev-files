@@ -1,6 +1,6 @@
 
 
-for file in "git/gitconfig" "git/gitconfig" "zsh/zshrc" "hyper.js"
+for file in "gitconfig" "gitconfig" "zshrc" "hyper.js"
 do
     rm ~/.$file
     ln -s $PWD/$file ~/.$file

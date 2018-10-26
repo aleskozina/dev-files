@@ -12,10 +12,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-SCRIPTPATH="$(dirname $(readlink $( pwd -P )/zsh))"
-source $SCRIPTPATH/brew
-source $SCRIPTPATH/node
-source $SCRIPTPATH/shortcuts
+SCRIPTPATH="$(dirname $(readlink $( pwd -P )/.zshrc))"
+source $SCRIPTPATH/zsh/brew
+source $SCRIPTPATH/zsh/node
+source $SCRIPTPATH/zsh/shortcuts
 
 PURE_PROMPT_SYMBOL=λ
 PURE_PROMPT_NODE=⬢
