@@ -1,5 +1,3 @@
-
-
 for file in "gitconfig" "gitconfig" "zshrc" "hyper.js"
 do
     rm ~/.$file
