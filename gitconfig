@@ -1,0 +1,19 @@
+[user]
+    name = Ales Kozina
+    email = kozina.ales@gmail.com
+[core]
+	editor = nano
+	excludesfile = ~/.gitignore
+[alias]
+    f = fetch
+    fa = fetch --all
+    s = status
+    c = commit -m
+    d = diff
+    pl = pull
+    ps = push
+    ac = !git add --all && git commit -m
+[color]
+    ui = true
+[push]
+    default = current
