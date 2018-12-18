@@ -12,6 +12,7 @@
     d = diff
     pl = pull
     ps = push
+    pom = push origin master
     ac = !git add --all && git commit -m
 [color]
     ui = true

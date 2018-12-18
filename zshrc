@@ -1,4 +1,6 @@
-# export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
+source $ZSH/oh-my-zsh.sh
+
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/openjdk-11.0.1.jdk/Contents/Home"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
@@ -13,7 +15,7 @@ ZSH_THEME=""
 #  zsh-syntax-highlighting
 # )
 
-# source $ZSH/oh-my-zsh.sh
+
 
 SCRIPTPATH="$(dirname $(readlink $( pwd -P )/.zshrc))"
 source $SCRIPTPATH/zsh/brew
