@@ -1,5 +1,5 @@
 # install
-* submodule: git submodule update --init
+* Inconsolata font
 * brew
 * zsh (brew)
 * oh-my-zsh

@@ -2,51 +2,35 @@
 // which will not automatically be merged into this file.
 // See https://hyper.is#cfg for all currently supported options.
 
+const colors = {
+  "outline-bg": "#071f28",
+  "content-bg": "#0d2c37",
+}
+
 module.exports = {
   config: {
-    // choose either `'stable'` for receiving highly polished,
-    // or `'canary'` for less polished but more frequent updates
-    updateChannel: 'stable',
-
-    // default font size in pixels for all tabs
-    fontSize: 12,
-
-    // font family with optional fallbacks
-    fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-
-    // default font weight: 'normal' or 'bold'
+    updateChannel: 'canary',
+    fontSize: 14,
+    fontFamily: 'Inconsolata, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     fontWeight: 'normal',
-
-    // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
-
-    // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
-    cursorColor: 'rgba(248,28,229,0.8)',
-
-    // terminal text color under BLOCK cursor
     cursorAccentColor: '#000',
-
-    // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
+    backgroundColor: '#0d2c37',
+    cursorColor: 'rgba(180,135,1,0.8)',
+    selectionColor: 'rgba(180,135,1,0.4)',
     cursorShape: 'BLOCK',
-
-    // set to `true` (without backticks and without quotes) for blinking cursor
     cursorBlink: false,
-
-    // color of the text
     foregroundColor: '#fff',
-
-    // terminal background color
-    // opacity is only supported on macOS
-    backgroundColor: '#000',
-
-    // terminal selection color
-    selectionColor: 'rgba(248,28,229,0.3)',
-
-    // border color (window, tabs)
-    borderColor: '#333',
-
-    // custom CSS to embed in the main window
-    css: '',
+    borderColor: colors["outline-bg"],
+    css: `
+      #hyper, .hyper_main {
+        background-color: ${colors["outline-bg"]};
+        border-radius: 0px;
+      }
+      .terms_terms {
+        background-color: ${colors["content-bg"]};
+      } 
+    `,
 
     // custom CSS to embed in the terminal window
     termCSS: '',
@@ -63,40 +47,25 @@ module.exports = {
     // custom padding (CSS format, i.e.: `top right bottom left`)
     padding: '12px 14px',
 
-    // the full list. if you're going to provide the full color palette,
-    // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      red: '#C51E14',
-      green: '#1DC121',
-      yellow: '#C7C329',
-      blue: '#0A2FC4',
-      magenta: '#C839C5',
-      cyan: '#20C5C6',
-      white: '#C7C7C7',
-      lightBlack: '#686868',
-      lightRed: '#FD6F6B',
-      lightGreen: '#67F86F',
-      lightYellow: '#FFFA72',
-      lightBlue: '#6A76FB',
-      lightMagenta: '#FD7CFC',
-      lightCyan: '#68FDFE',
-      lightWhite: '#FFFFFF',
+      black: '#626667',
+      red: '#ff0000',
+      green: '#849900',
+      yellow: '#b48701',
+      blue: '#3177b3',
+      magenta: '#cc00ff',
+      cyan: '#00ffff',
+      white: '#d0d0d0',
+      lightBlack: '#808080',
+      lightRed: '#ff0000',
+      lightGreen: '#4fbd10',
+      lightYellow: '#f3b809',
+      lightBlue: '#0066ff',
+      lightMagenta: '#cc00ff',
+      lightCyan: '#00ffff',
+      lightWhite: '#ffffff'
     },
 
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
-    //
-    // Windows
-    // - Make sure to use a full path if the binary name doesn't work
-    // - Remove `--login` in shellArgs
-    //
-    // Bash on Windows
-    // - Example: `C:\\Windows\\System32\\bash.exe`
-    //
-    // PowerShell on Windows
-    // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
     shell: '/usr/local/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
@@ -131,7 +100,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyperjs-theme'],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
