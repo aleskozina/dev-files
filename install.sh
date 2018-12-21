@@ -1,4 +1,4 @@
-for file in "gitconfig" "gitconfig" "zshrc" "hyper.js"
+for file in "gitconfig" "gitignore" "zshrc" "hyper.js"
 do
     rm ~/.$file
     ln -s $PWD/$file ~/.$file

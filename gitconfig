@@ -4,6 +4,8 @@
 [core]
 	editor = nano
 	excludesfile = ~/.gitignore
+  autocrlf = input
+  eol = lf
 [alias]
     f = fetch
     fa = fetch --all
