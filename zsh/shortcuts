@@ -9,3 +9,6 @@ alias cdl='cd /usr/local'
 #DB
 alias db-in='mysql -u root -p12345678'
 alias db-out='mysqldump -u root -p12345678'
+
+#RANDOM
+alias treee='tree -hlvC -L 2'

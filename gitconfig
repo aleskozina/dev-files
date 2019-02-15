@@ -1,6 +1,6 @@
 [user]
     name = Ales Kozina
-    email = kozina.ales@gmail.com
+    email = ales.kozina@jvm.ch
 [core]
 	editor = nano
 	excludesfile = ~/.gitignore
