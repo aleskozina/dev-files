@@ -6,4 +6,5 @@
 * zsh-syntax-highlighting
 * nvm
 * git (brew)
-* hyperjs
+* spaceship (zsh)
+* ~~hyperjs~~
