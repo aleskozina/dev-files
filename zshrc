@@ -1,10 +1,14 @@
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 fpath=("$HOME/.zfunctions" $fpath)
 
-SCRIPTPATH="$(dirname $(readlink $( pwd -P )/.zshrc))"
-source $SCRIPTPATH/zsh/brew
-source $SCRIPTPATH/zsh/node
-source $SCRIPTPATH/zsh/shortcuts
+#export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home'
+#export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk-12'
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/adoptopenjdk-12.jdk/Contents/Home'
+
+#SCRIPTPATH="$(dirname $(readlink $( pwd -P )/.zshrc))"
+source ~/.aleskozina/dev-files/zsh/brew
+source ~/.aleskozina/dev-files/zsh/node
+source ~/.aleskozina/dev-files/zsh/shortcuts
 
 # ZSH_THEME="spaceship"
 
@@ -12,12 +16,12 @@ autoload -U promptinit; promptinit
 prompt spaceship
 
 SPACESHIP_PROMPT_ORDER=(
-  time          # Time stamps section
+  # time          # Time stamps section
   # user          # Username section
   dir           # Current directory section
   # host          # Hostname section
   git           # Git section (git_branch + git_status)
-  node          # Node.js section
+  # node          # Node.js section
   # hg            # Mercurial section (hg_branch  + hg_status)
   #  package       # Package version
   
@@ -26,7 +30,7 @@ SPACESHIP_PROMPT_ORDER=(
   # xcode         # Xcode section
   # swift         # Swift section
   # golang        # Go section
-  php           # PHP section
+  # php           # PHP section
   # rust          # Rust section
   # haskell       # Haskell Stack section
   # julia         # Julia section
@@ -51,5 +55,4 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_RPROMPT_ORDER=(
   
 )
-
 

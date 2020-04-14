@@ -5,6 +5,6 @@ export PATH="/usr/local/sbin:$PATH"
 # [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 #SERVICES
-alias devstart='brew services start mysql && brew services start php71 && sudo apachectl start'
-alias devrstart='brew services restart mysql && sudo apachectl restart'
-alias devstop='brew services stop mysql && brew services stop php71 && sudo apachectl stop'
+#alias devstart='brew services start mysql && brew services start php71 && sudo apachectl start'
+#alias devrstart='brew services restart mysql && sudo apachectl restart'
+#alias devstop='brew services stop mysql && brew services stop php71 && sudo apachectl stop'
